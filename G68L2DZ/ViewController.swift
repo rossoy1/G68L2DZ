@@ -14,9 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         for i in 0..<3 {
-            drawBox(a: CGFloat(50+80*i), b: 200)
+            for u in 0..<i+1 {
+                drawBox(a: CGFloat(50+80*u), b: CGFloat(80*i))
+
         }
         
+        }
         
         
     }
