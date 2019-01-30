@@ -13,8 +13,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        for i in 0..<3 {
+            drawBox(a: CGFloat(50+80*i), b: 200)
+        }
+        
+        
+        
     }
-
-
+    
+    
+    
+    func drawBox(a: CGFloat, b: CGFloat) {
+        let box = UIView()
+        box.frame.size.width = 64
+        box.frame.size.height = 64
+        box.frame.origin.x = a
+        box.frame.origin.y = b
+        box.backgroundColor = .red
+        view.addSubview(box)
+    }
+    
+    
 }
 
